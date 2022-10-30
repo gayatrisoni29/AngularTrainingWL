@@ -1,16 +1,23 @@
 
-<div id="login-form">
-    <form>
-      <h1>{{title}}</h1>
-      <p>Fill out this form to login.</p>
+<div *ngIf= "!loggedIn ; else filmsDetails" id="login-form">
+  <form (ngSubmit)="formSubmit()" [formGroup]="mainForm">
+      <h1>{{title}}</h1> <br>
+      <div class="center">Fill out this form to login.</div>
       <hr />
   
       <label for="email"><b>Email</b></label>
-      <input type="text" placeholder="Enter your email" id="email" name="email" required/>
+      <input formControlName="email" type="text" placeholder="Enter your email.."  />
   
       <label for="psw"><b>Password</b></label>
-      <input type="password" placeholder="Enter your password" id="psw" name="psw" required/>
-  
-      <p><button type="submit">Login</button></p>
+      <input formControlName ="password" type="password" placeholder="Enter your password"  />
+      <div class="center"><button type="submit">Login</button></div>
     </form>
   </div>
+
+  <ng-template #filmsDetails>
+    <div class="logout-container">
+      <button (click)="logout()">Logout</button>
+    </div>
+  <app-film-search-component></app-film-search-component>
+  </ng-template>
+

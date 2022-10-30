@@ -1,0 +1,23 @@
+.film.card {
+    width: 960px;
+  }
+
+  ul {
+    padding: 0;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+  }
+  
+  li {
+    list-style: none;
+  }
+
+  form, .card {
+    background: rgb(170, 208, 232);
+    box-shadow: 0 0 25px rgba(193, 95, 95, 0.5);
+    padding: 0.5em;
+    margin: 1em 0;
+  }

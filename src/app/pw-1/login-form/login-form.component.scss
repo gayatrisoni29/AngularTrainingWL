@@ -38,7 +38,7 @@ html {
   
   /* Colors */
   
-  body { color: #222; background-color: #fcfcfc; }
+  body { color: #222; background-color: #f34848; }
   code, pre, samp, kbd { color: #111; }
   a, header nav a:visited, a code { color: #00e; }
   a:visited, a:visited code { color: #60b; }
@@ -110,8 +110,8 @@ html {
   }
   
   form, .card {
-    background: white;
-    box-shadow: 0 0 25px rgba(0,0,0,0.5);
+    background: rgb(170, 208, 232);
+    box-shadow: 0 0 25px rgba(193, 95, 95, 0.5);
     padding: 0.5em;
     margin: 1em 0;
   }
@@ -194,3 +194,20 @@ html {
     display: flex;
     flex-direction: column;
   }
+
+  .center{
+    text-align: center;
+
+  }
+
+  .logout-container {
+    display: flex;
+    justify-content: flex-end;
+  
+    button {
+      margin: 0;
+      font-size: 1em;
+    }
+  }
+
+  

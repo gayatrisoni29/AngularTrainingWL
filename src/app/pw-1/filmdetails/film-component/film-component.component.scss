@@ -1,0 +1,39 @@
+.poster {
+    float: left;
+    margin: 0 0.5em 0.5em 0;
+  }
+  
+  .title {
+    font-size: 2rem;
+  }
+  
+  .rating {
+    color: gold;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.5)
+  }
+  .card {
+    width: 960px;
+  }
+
+  dl {
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  li {
+    list-style: none;
+  }
+  
+  dt, label {
+    display: inline-block;
+    width: 30%;
+    text-align: right;
+    margin-right: 1em;
+    font-weight: bold;
+  }
+  dd {
+    display: inline-block;
+    min-width: 40%;
+    flex: 1;
+    text-align: left;
+  }
